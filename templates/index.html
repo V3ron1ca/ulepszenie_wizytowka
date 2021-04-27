@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home page</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='projkt.css') }}"/>
+    </head>
+    <body>
+        <div id="home">
+            <h1>Witaj na mojej stronie domowej!</h1>
+            <center><img src="{{ url_for('static' , filename='zdj.png')}}" alt="smieszny mem" title="Mem"></center>
+            <center><h2>O mnie</h2></center>
+            <center><p>imię: Weronika</p></center>
+            <br>
+            <center><p>nazwisko: Windys</p></center>
+            <center><a href="{{ url_for('kontakt')}}">Kontakt</a></center>
+        </div>
+    </body>
+</html>

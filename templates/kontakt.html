@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>kontakt page</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='projkt.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='kontakt.css') }}">
+    </head>
+    <body>
+        <div id="home">
+            <h1>Witaj na mojej stronie domowej!</h1>
+            <center><img src="{{ url_for('static' , filename='pika.gif')}}" alt="Pikachu" title="Pika pika"></center>
+            <center><h2>Kontakt</h2></center>
+            <center>
+                <ul>
+                    <li style="color: black;"><span style="color: greenyellow;"> email: jakiswymyslony@cos.com </span></li>
+                    <li style="color: black;"><span style="color: greenyellow;"> telefon: 566 783 873 </span></li>
+                </ul>
+            </center>
+            <center>
+                <form action="{{ url_for('kontakt') }}" method="POST">
+                    <textarea name="text"></textarea>
+                    <input type="submit">
+                </form>   
+            </center>
+        </div>
+    </body>
+</html>
